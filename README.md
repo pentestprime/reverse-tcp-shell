@@ -5,6 +5,8 @@ These scripts must be used ONLY for the purpose of LEGAL penetration testing by 
 
 Reverse TCP shell requires two Kali Linux based computers, a remote and a control computer.  The remote computer could be a laptop or something such as a raspberry pi.  The device can be placed on a clients network and then accessed via the control computer located at a remote site.
 
+The control.sh script should be executed before the remote.sh script.
+
 The scripts:
 ------------
 control.sh - execute on the control computer for initial configuration
