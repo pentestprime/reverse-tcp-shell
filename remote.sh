@@ -34,6 +34,7 @@ echo "    The keys must be RSA keys"
 echo "    If you have already created these keys"
 echo "    you will have the option to keey your current keys"
 echo "    Other than that please choose the defaults by pressing ENTER"
+echo " "
 pause
 ssh-keygen -t rsa
 echo " "
@@ -48,7 +49,7 @@ systemctl enable ssh.socket
     echo " "
     echo "   I need to send the ssh key to the control computer system"
     echo "   You will be asked to enter the control computer password" 
-    echo ""
+    echo " "
 ssh-copy-id $controlvar
 echo "   Creating connection script in /root/scripts/ssh_connect.sh"
 mkdir /root/scripts
@@ -94,11 +95,11 @@ SyslogIdentifier=ssh_control
 WantedBy=multi-user.target
 EOF
 echo "   Starting ssh_connect service..."
-systemctl enable ssh_connect.service
+systemctl enable ssh_connect.service --now
 echo ""
 echo ""
 echo "   The configuration of the Remote computer is complete."
-echo "   A system reboot is required. "
+echo ""
 pause
 
 

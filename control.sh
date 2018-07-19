@@ -34,6 +34,7 @@ echo "    The keys must be RSA keys"
 echo "    If you have already created these keys"
 echo "    you will have the option to keey your current keys"
 echo "    Other than that please choose the defaults by pressing ENTER"
+echo " "
 pause
 ssh-keygen -t rsa
 echo " "

@@ -34,7 +34,7 @@ while true; do
             [Yy]* ) break;;
             * ) echo " ";;
         esac
-pause
+done
 cp /root/scripts/ssh_connect.sh /root/scripts/ssh_connect.bak
 cat << EOF > /root/scripts/ssh_connect.sh
 #!/bin/bash
