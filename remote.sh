@@ -48,7 +48,8 @@ systemctl enable ssh.socket
     echo " "
     echo "   I need to send the ssh key to the control computer system"
     echo "   You will be asked to enter the control computer password" 
-ssh-copy-id –p 22 $controlvar
+    echo ""
+ssh-copy-id $controlvar
 echo "   Creating connection script in /root/scripts/ssh_connect.sh"
 mkdir /root/scripts
 cat << EOF > /root/scripts/ssh_connect.sh
