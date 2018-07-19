@@ -99,7 +99,7 @@ echo ""
 echo ""
 echo "   The configuration of the Remote computer is complete."
 echo "   A system reboot is required. "
-puase
+pause
 
 
 

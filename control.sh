@@ -48,7 +48,9 @@ systemctl enable ssh.socket
     echo " "
     echo "   I need to send the ssh key to the remote system"
     echo "   You will be asked to enter the remote computer password" 
-ssh-copy-id –p 22 $remotevar
+    echo ""
+pause
+ssh-copy-id $remotevar
 echo ""
 echo ""
 echo "   The configuration of the Control computer is complete."
